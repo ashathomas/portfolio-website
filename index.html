@@ -4,120 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asha thomas Portfolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Asha Thomas</h1>
+
         <nav>
-
-            <a href="#about">About Me</a></li>|
-            <a href="#projects">Projects</a> |
-            <a href="#contact">Contact</a> 
-
+            <h3>Asha Thomas</h3>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
         </nav>
-        <hr>
     </header>
-<main>
-    <!-- About Section -->
-    <section id="about">
-        <article>
+
+    <section id="about" class="section">
+        <div class="about-content">
+                <img src="images/pexels-optical-chemist-340351297-30994370.jpg" alt="no image">
+<div>
         <h2>About Me</h2>
-
-        <img src="images/IMG_2408 mail copy (1).jpg" alt="Profile picture of Asha Thomas" width="200">
-
-        <p>
-            Hello! I am Asha Thomas, an MSc IT graduate.
-            I am passionate about web development and software
-            development. I enjoy learning new technologies and
-            building user-friendly applications.Experienced Software Developer with 5 years of experience in developing
-            web applications using ASP.NET and
-            Angular. Skilled in building scalable and efficient solutions, seeking a challenging role to contribute my
-            expertise and
-            grow professionally.
-        </p>
-    </article>
+        <p> Hello! I am <strong>Asha Thomas</strong>, a Web Developer passionate
+                    about creating beautiful and responsive websites using HTML, CSS and JavaScript.</p>
+                    <button>Download Resume</button>
+</div>
+</div>
     </section>
+    <!-- project section -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
 
-    <hr>
+        <div class="project-container">
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
+            <div class="project-card">
+                <img src="images/MariApps-wins-a-major-client-in-Hong-Kong.jpg" alt="Project 1">
+                <h3>Job Portal Website</h3>
+                <p>Developed scalable web applications using .NET Core and Angular.</p>
+            </div>
 
-        <article>
-            <h3>Job Portal</h3>
-            <p>
-                Developed a seaman Job Portal for parent company using ASP.NET Core Web API and Angular with
-                features like job posting, job search, user authentication(JWT) and application tracking. Used Entity
-                Framework
-                Core and SQL Server for backend and built responsive UI with Angular.
-            </p>
-            <a href="#">View Project</a>
-        </article>
+            <div class="project-card">
+                <img src="images/ai-generated-generative-ai-shopping-cart-with-shopping-bags-standing-on-laptop-keyboard-shop-online-free-delivery-discounts-and-sale-concept-photo.jpg" alt="Project 2">
+                <h3>E-commerce Site</h3>
+                <p>Developed and maintained web applications using ASP.NET MVC and .NET Framework.</p>
+            </div>
 
-        <br>
+            <div class="project-card">
+                <img src="images/Employee-Self-Service-Portal.jpg" alt="Project 3">
+                <h3>ESSP</h3>
+                <p>Developed and maintained web applications using ASP.NET MVC and .NET Framework.</p>
+            </div>
 
-        <article>
-            <h3>E-Commerce Website</h3>
-            <p>
-                Developed an E-commerce web application using ASP.NET MVC modules including user authentica
-                tion,product management, shopping cart, order processing and payment integration.
-            </p>
-            <a href="#">View Project</a>
-        </article>
+        </div>
 
-        <br>
-
-        <article>
-            <h3>Employee Self Service Portal</h3>
-            <p>
-                Developed a web-based Employee Management System using ASP.NET
-                MVC architecture. Modules including employee profile management, attendance tracking, leave management
-                and
-                admin dashboard for managing employee activities.
-            </p>
-            <a href="#">View Project</a>
-        </article>
     </section>
+    <section id="contact" class="section">
+        <h2>Contact me</h2>
+        <form class="contact-form">
 
-    <hr>
-
-    <!-- Contact Form -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-
-        <form>
-
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required>
-            <br><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required placeholder="ex:myname@gmail.com">
-            <br><br>
-
-            <label for="subject">Subject:</label><br>
-            <input type="text" id="subject" name="subject" required>
-            <br><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="30" required></textarea>
-            <br><br>
-
-            <button type="submit">Send Message</button>
-
+        <div>
+            <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div><input type="email" id="email"  placeholder="Your Email" required></div>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
         </form>
     </section>
-
-    <hr>
-</main>
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Asha Thomas. All Rights Reserved.</p>
+<p>© 2026 Asha Thomas | Personal Portfolio</p>
     </footer>
-
 
 </body>
 
