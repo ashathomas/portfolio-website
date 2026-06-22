@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+header{
+    background:#333;
+    color:white;
+    position:sticky;
+    top:0;
+}
+ /* Navigation bar container */
+    nav {
+        display: flex;
+        justify-content:space-around; /* Space between name and links */
+        align-items: center;
+        background-color: black;
+        padding: 10px 20px; 
+    }
+    .nav-links {
+         list-style:none; 
+        display: flex;
+        gap: 20px; 
+        /* Space between links */
+    }
+
+    /* Individual links */
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    /* Hover effect */
+    .nav-links a:hover {
+        color: #ff9800;
+    }
+    
+/* Hamburger */
+#menu-toggle{
+    display:none;
+}
+
+.hamburger{
+    display:none;
+    font-size:2rem;
+    cursor:pointer;
+}
+   
+    section h2{
+        margin-bottom: 10px;
+        background-color: #ff9800;
+        text-align: center;
+    }
+    .about-content{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+    }
+     .about-content img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+     object-fit:cover;
+    border:5px solid #2563eb;
+}
+
+
+/* Projects */
+
+.project-container{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    padding:15px;
+}
+
+.project-card p{
+    padding:0 15px 20px;
+}
+/* Contact Form */
+
+.contact-form{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:2px solid #dbeafe;
+    border-radius:10px;
+    outline:none;
+}
+
+
+
+.contact-form button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:#0f172a;
+}
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ==========================
+   Mobile (Up to 768px)
+   ========================== */
+@media (max-width:768px){
+
+    .hamburger{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        background:#333;
+        position:absolute;
+        top:60px;
+        right:0;
+        width:200px;
+        padding:15px;
+    }
+
+    #menu-toggle:checked ~ .nav-links{
+        display:flex;
+    }
+
+    .about-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .project-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    body{
+        font-size:0.9rem;
+    }
+}
+
+/* ==========================
+   Tablet (769px - 1024px)
+   ========================== */
+@media (min-width:769px) and (max-width:1024px){
+
+    .about-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .project-container{
+        justify-content:center;
+    }
+
+    body{
+        font-size:1rem;
+    }
+}
+
+/* ==========================
+   Desktop (Above 1024px)
+   ========================== */
+@media (min-width:1025px){
+
+    body{
+        font-size:1.1rem;
+    }
+
+    .project-container{
+        display:flex;
+        justify-content:space-around;
+    }
+}
